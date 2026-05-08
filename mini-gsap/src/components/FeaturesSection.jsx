@@ -18,10 +18,10 @@ function FeaturesSection() {
     })
   }, [])
 const features = [
-    'Performance',
-    'Animation Control',
-    'Responsive Design',
-    'Creative Development'
+    'Performance engine',
+    'Streetwear Identity',
+    'Athlete Approved',
+    'Sustainable Future'
   ]
 
   return (
@@ -33,7 +33,7 @@ const features = [
           <div className="feature-card" key={index}>
             <h3>{item}</h3>
             <p>
-              ini punya oliolioli
+              designed with lightweight materials and responsive cushioning to support every mmovement on and off the field
             </p>
           </div>
             ))}

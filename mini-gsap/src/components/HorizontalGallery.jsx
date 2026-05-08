@@ -1,12 +1,15 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import pic1 from './assets/luka.jpg'
-import pic2 from './assets/luka.jpg'
-import pic3 from './assets/luka.jpg'
+import pic1 from './assets/adidas.jpg'
+import pic2 from './assets/adidas2.jpg'
+import pic3 from './assets/adidas3.jpg'
+import pic4 from './assets/adidas4.jpg'
+import pic5 from './assets/adidas5.jpg'
+
 
 gsap.registerPlugin(ScrollTrigger)
-const images = [pic1, pic2, pic3, pic1, pic2]
+const images = [pic1, pic2, pic3, pic4, pic5]
 function HorizontalGallery() {
   const containerRef = useRef(null)
 
@@ -36,12 +39,48 @@ function HorizontalGallery() {
   return (
     <section className="gallery-section" ref={containerRef}>
       <div className="gallery-wrapper">
-       {[1, 2, 3, 4, 5].map((item, index) => (
+       {[1].map((item, index) => (
   <div className="panel" key={item}>
     <div className="panel-content">
       <img src={images[index]} alt="" />
-      <h2>Panel {item}</h2>
-      <p>Luka</p>
+      <h2>ultraboost energy {item}</h2>
+      <p>experience maximum comfort with responsive boots cushioning built for long-lasting performance</p>
+    </div>
+  </div>
+))}
+ {[2].map((item, index) => (
+  <div className="panel" key={item}>
+    <div className="panel-content">
+      <img src={images[index]} alt="" />
+      <h2>predator legacy {item}</h2>
+      <p>inspired by football legends, crafted for precision, control, and confidence on the pitch</p>
+    </div>
+  </div>
+))}
+ {[3].map((item, index) => (
+  <div className="panel" key={item}>
+    <div className="panel-content">
+      <img src={images[index]} alt="" />
+      <h2>campus street style {item}</h2>
+      <p> classic silhouette redesigned for modern performance</p>
+    </div>
+  </div>
+))}
+ {[4].map((item, index) => (
+  <div className="panel" key={item}>
+    <div className="panel-content">
+      <img src={images[index]} alt="" />
+      <h2>original collection {item}</h2>
+      <p>timeless adidas heritage reimagined for todays generation</p>
+    </div>
+  </div>
+))}
+ {[5].map((item, index) => (
+  <div className="panel" key={item}>
+    <div className="panel-content">
+      <img src={images[index]} alt="" />
+      <h2>future motion {item}</h2>
+      <p>where innovation meets creativity then pushing movement beyond limits</p>
     </div>
   </div>
 ))}

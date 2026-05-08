@@ -29,11 +29,29 @@ function StoryCards() {
       <h2>Story Section</h2>
 
       <div className="story-wrapper">
-        {[1, 2, 3].map((item) => (
+        {[1].map((item) => (
           <div className="story-card" key={item}>
-            <h2>Card {item}</h2>
+            <h2>from streets to stadiums {item}</h2>
             <p>
-              ini punya oli
+              adidas began with a vision to empower athletes everywhere, growing into a global symbol of sport and culturs
+            </p>
+            <button>Read More</button>
+          </div>
+        ))}
+        {[2].map((item) => (
+          <div className="story-card" key={item}>
+            <h2>designed for dreamers {item}</h2>
+            <p>
+              every pair is created to inspire confidence creativity and fearless self-expression
+            </p>
+            <button>Read More</button>
+          </div>
+        ))}
+        {[3].map((item) => (
+          <div className="story-card" key={item}>
+            <h2>the future starts here {item}</h2>
+            <p>
+             innovation never stops, adidas continues shaping the future of movement and style
             </p>
             <button>Read More</button>
           </div>
